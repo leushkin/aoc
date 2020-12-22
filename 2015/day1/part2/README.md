@@ -2,5 +2,6 @@
 
 ## Quick start
 
-- make sure that you have installed corebuild
-- `$ make`
+- make sure that you have installed: dune
+- `$ dune build main.exe`
+- `$ dune exec ./main.exe input.txt`

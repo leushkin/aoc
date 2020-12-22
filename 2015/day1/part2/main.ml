@@ -1,9 +1,9 @@
 open Core
-open Condition
 
-exception SomethingWentWrong
+exception UnexpecedChar of char
+exception SomethingWentWrong of string
 
-let char_list_of_string s = List.init (String.length s) (String.get s)
+let char_list_of_string s = List.init (String.length s) ~f:(String.get s)
 
 let read_file (file_path : string) : string =
   let ch = open_in file_path in
@@ -17,14 +17,14 @@ let helper = function
       match x with
       | '(' -> 1
       | ')' -> -1
-      | _ -> raise SomethingWentWrong
+      | _ -> UnexpecedChar x |> raise
     )
-  | None -> raise SomethingWentWrong
+  | None -> SomethingWentWrong "funciton got None" |> raise
 
 let solution (str: char list) : int =
   let i = ref 0 in
   let acc = ref 0 in
-  while !i != -1 do
+  while !acc != -1 do
     acc := !acc + (!i |> List.nth str |> helper);
     i := !i + 1
   done;
