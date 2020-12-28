@@ -1,8 +1,6 @@
 use std::env;
 use std::fs;
 
-// correct: 1598415
-
 fn calculate_size((l, w, h): (i32, i32, i32)) -> i32 {
   let s1 = l * w;
   let s2 = w * h;
