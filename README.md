@@ -7,3 +7,4 @@ Advent of Code
 - Rust ([2015 day2](https://github.com/leushkin/aoc/tree/main/2015/day02))
 - Python ([2015 day3](https://github.com/leushkin/aoc/tree/main/2015/day03))
 - C ([2015 day4](https://github.com/leushkin/aoc/tree/main/2015/day04))
+- Haskell ([2015 day5](https://github.com/leushkin/aoc/tree/main/2015/day05))
