@@ -9,3 +9,4 @@ Advent of Code
 - C ([2015 day4](https://github.com/leushkin/aoc/tree/main/2015/day04))
 - Haskell ([2015 day5](https://github.com/leushkin/aoc/tree/main/2015/day05))
 - Clojure ([2015 day6](https://github.com/leushkin/aoc/tree/main/2015/day06))
+- JavaScript ([2015 day7](https://github.com/leushkin/aoc/tree/main/2015/day07))
